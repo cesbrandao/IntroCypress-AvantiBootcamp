@@ -76,8 +76,7 @@ describe('Register', () => {
     cy.typeAddressCity("Fortaleza");
     cy.typeAddressState("Ceará");
     cy.typeAddressZipCode("6020000");
-    //cy.typePhoneNumber("88999999999");
-    cy.typePhoneNumber('');
+    cy.typePhoneNumber("88999999999");
     cy.typeSSN("12345678910");
 
     cy.typePassword("test123");
