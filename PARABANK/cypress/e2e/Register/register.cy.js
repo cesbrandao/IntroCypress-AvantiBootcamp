@@ -30,7 +30,7 @@ describe('Register', () => {
     cy.get('p').contains('Your account was created successfully. You are now logged in.').should('be.visible');
   });
 
-  it.only('Registrar usuario com usename ja cadastrado', () => {
+  it.only('Registrar usuario com username ja cadastrado', () => {
     cy.typeFirstName("Carlos");
     cy.typeLastName("Silva");
     cy.typeAddressStreet("Rua dos Bobos, 0");
@@ -69,7 +69,7 @@ describe('Register', () => {
     cy.get('span[id="repeatedPassword.errors"]').contains('Passwords did not match.').should('be.visible');
   });
 
-  it('Registrar usuario sem usarname e com senhas diferentes', () => {
+  it('Registrar usuario sem username e com senhas diferentes', () => {
     cy.typeFirstName("Carlos");
     cy.typeLastName("Silva");
     cy.typeAddressStreet("Rua dos Bobos, 0");
